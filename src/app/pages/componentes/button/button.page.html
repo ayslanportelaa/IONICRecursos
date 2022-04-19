@@ -1,0 +1,69 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Ion-button</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>Tamanho dos botões</h1>
+  <ion-button size='small'>Small</ion-button>
+  <br />
+  <ion-button size='default'>default</ion-button>
+  <br />
+  <ion-button size='large'>large</ion-button>
+  <br />
+
+
+  <h1>Botão com link</h1>
+  <ion-button color='warning' href="https://pousadaportela.com.br" target="_blank">Pousada Portela</ion-button>
+  <ion-button color='medium' href="https://pousadaportela.com.br/gerenciador" target="_blank">Pousada Portela -
+    Gerenciador</ion-button>
+
+  <h1>Botão com ação</h1>
+  <ion-button color='tertiary' (click)='exibirMsg()'>Clique em mim</ion-button>
+
+
+  <h1>Tipos de botões</h1>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">Success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="light">Light</ion-button>
+  <ion-button color="medium">Medium</ion-button>
+  <ion-button color="dark">Dark</ion-button>
+
+  <h1>Botão Expandido</h1>
+  <ion-button expand="block">block levemente arrendondado nas bordas</ion-button>
+  <ion-button color="success" expand="full">full quadrado nas bordas</ion-button>
+
+  <h1>Botão Arredondado</h1>
+  <ion-button shape="round">round</ion-button>
+
+  <h1>Botão vazado</h1>
+  <ion-button shape="round" fill="outline">round + outline</ion-button>
+  <ion-button color="success" expand="full" fill="outline">color + full + outline</ion-button>
+  <ion-button color="dark" expand="block" fill="outline">color + block + outline</ion-button>
+
+  <h1>Botão com ícone</h1>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    ícone na esquerda
+  </ion-button>
+  <br>
+  <ion-button>
+    <ion-icon slot="end" name="star"></ion-icon>
+    ícone na direita
+  </ion-button>
+  <br>
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+
+</ion-content>

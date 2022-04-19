@@ -1,0 +1,20 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='danger'>
+    <ion-button slot="start" color="danger">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Bateria Status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-button expand="block" color="success" (click)="statusBateria()">Status da Bateria</ion-button>
+  <ion-button expand="block" color="danger"  (click)="stopBateria()">Parar de monitorar a bateria</ion-button>
+
+  <h1 [hidden]="!bateriaStatus">Status da Bateria: {{bateriaStatus}}%</h1>
+  <h1 [hidden]="!bateriaStatus">Está Carregando: {{carregadorConectado}}</h1>
+
+</ion-content>

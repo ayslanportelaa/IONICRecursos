@@ -1,0 +1,123 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>DateTime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Initial value -->
+  <h1>Calendário setando uma data,<br> neste exemplo foi: 07/05/1994 10h15</h1>
+  <ion-datetime value="1994-05-07T10:15:20.789"></ion-datetime>
+
+  <br>
+
+  <!-- Readonly -->
+  <h1>Calendário apenas leitura</h1>
+  <ion-datetime readonly value="1994-05-15T10:00:20.789"></ion-datetime>
+
+  <br>
+
+  <!-- Disabled -->
+  <h1>Calendário desabilitado</h1>
+  <ion-datetime disabled></ion-datetime>
+
+  <br>
+
+  <!-- Custom locale -->
+  <h1>Calendário informando o local , exemplo:pt-BR</h1>
+  <ion-datetime locale="pt-BR"></ion-datetime>
+
+  <!-- Max and min -->
+  <h1>Definindo a data minima e a data máxima para selecionar,<br> neste exemplo é de 01/01/2000 até 31/12/2022</h1>
+  <ion-datetime min="2000-01-01" max="2022-12-31" value="2007-02-02"></ion-datetime>
+
+  <br>
+
+  <!-- 15 minute increments -->
+  <h1>Aqui é definido incremento de 15min na seleção do tempo</h1>
+  <ion-datetime minuteValues="0,15,30,45"></ion-datetime>
+
+  <br>
+
+  <!-- Specific days/months/years -->
+  <h1>Aqui é definido os<br> meses 6,7,8<br> os anos 2014 e 2015<br> os dias 01, 02 ,03 ,04 ,05 ,06 ,08 ,09 ,10 ,11 ,12
+    ,13 ,14 </h1>
+  <ion-datetime monthValues="6,7,8" yearValues="2014,2015" dayValues="01,02,03,04,05,06,08,09,10,11,12,13,14">
+  </ion-datetime>
+
+  <br>
+
+  <!-- Selecting time, no date -->
+  <h1>Aqui é exibido apenas o tempo</h1>
+  <ion-datetime presentation="time"></ion-datetime>
+
+  <br>
+
+  <!-- Selecting time first, date second -->
+  <h1>Aqui seleciona primeiro o tempo, depois a data</h1>
+  <ion-datetime presentation="time-date"></ion-datetime>
+
+  <br>
+
+  <!-- Full width size -->
+  <h1>Calendário 100% da tela</h1>
+  <ion-datetime size="cover"></ion-datetime>
+
+  <br>
+
+  <!-- Custom Hour Cycle -->
+  <h1>Customização do circulo do calendário</h1>
+  <ion-datetime hourCycle="h23"></ion-datetime>
+
+  <br>
+
+  <!-- Custom first day of week -->
+  <h1>Definindo o primeiro dia da semana</h1>
+  <ion-datetime [firstDayOfWeek]="10"></ion-datetime>
+
+  <br>
+
+  <!-- Custom title -->
+  <h1>Definindo um titulo para a data</h1>
+  <ion-datetime>
+    <div slot="title">Veja que dia é hoje</div>
+  </ion-datetime>
+
+  <br>
+
+  <!-- Clear button -->
+  <h1>Botão de limpar a data selecionada e voltar para o padrão</h1>
+  <ion-datetime [showClearButton]="true"></ion-datetime>
+
+  <br>
+
+  <!-- Datetime in overlay -->
+  <h1>Exibe o calendário em um modal</h1>
+  <ion-button id="open-modal">Open Datetime Modal</ion-button>
+  <ion-modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-datetime></ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!-- Custom buttons -->
+  <h1>Botões de ações no calendário</h1>
+  <ion-datetime>
+    <ion-buttons slot="buttons">
+      <ion-button (click)="confirm()">Good to go!</ion-button>
+      <ion-button (click)="reset()">Reset</ion-button>
+    </ion-buttons>
+  </ion-datetime>
+
+
+
+
+
+</ion-content>

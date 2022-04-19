@@ -1,0 +1,20 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='danger'>
+    <ion-button slot="start" color="danger">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Lanterna</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <!-- Botão que irá ligar e desligar a lanterna do celular -->
+  <ion-button expand="block" color="success" (click)="ligaLanterna()">Ligar Lanterna</ion-button>
+  <ion-button expand="block" color="danger" (click)="desligaLanterna()">Desligar Lanterna</ion-button>
+
+  <h2>{{msg}}</h2>
+
+</ion-content>

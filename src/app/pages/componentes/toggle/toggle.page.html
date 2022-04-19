@@ -1,0 +1,29 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Toggle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-toggle  checked="true" (ionChange)="apertar($event)"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-toggle [(ngModel)]="sausage"  (ionChange)="apertar($event)"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-toggle [(ngModel)]="mushrooms"  (ionChange)="apertar($event)"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

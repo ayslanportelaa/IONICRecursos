@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Ion-card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Tipos possíveis de Cards</h1>
+
+
+  <br>
+  <br>
+
+  <h1>Card com imagem</h1>
+  <ion-card> 
+    <ion-card-header>
+     <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/270594351.jpg?k=c0715449974fd90e4faf75efbe15391c13310ed36aa790ae46d9b0cbe9f8032f&o=&hp=1">
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button slot="end" fill="outline" size="small" color="warning" href="https://pousadaportela.com.br" target="_blank">Pousada Portela</ion-button>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Wi-fi</ion-label>
+     
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="bed" slot="start" ></ion-icon>
+      <ion-label>Redes para descanso</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>Chalés individuais</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="tablet-portrait-outline" slot="start"></ion-icon>
+      <ion-label>Piscina</ion-label>
+    </ion-item>
+
+  </ion-card>
+
+  <br>
+  <br>
+
+
+  <h1>Card Padrão</h1>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Sub-Título</ion-card-subtitle>
+      <ion-card-title>Card Título</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do Card
+    </ion-card-content>
+  </ion-card>
+
+
+  <br>
+  <br>
+
+
+  <h1>Card com ícone</h1>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>ion-item no card, icone na esquerda, botão na direita</ion-label>
+      <ion-button fill="outline" slot="end"
+        href="https://www.google.com/maps/dir//pousada+portela/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x9e25b902e8caaf:0x7e2a4fb914dd84c4?sa=X&ved=2ahUKEwjXpOyP5Mr1AhXQrJUCHQPsDLUQ9Rd6BAgTEAQ"
+        target="_blank">Pousada Portela</ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      Aperte o botão para ver a rota da Pousada Portela
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+  <br>
+
+  <h1>Card lista</h1>
+  <ion-card>
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Card Link Item 1 activated</ion-label>
+    </ion-item>
+
+    <ion-item href="#">
+      <ion-icon name="wine" slot="start"></ion-icon>
+      <ion-label>Card Link Item 2</ion-label>
+    </ion-item>
+
+    <ion-item class="ion-activated">
+      <ion-icon name="warning" slot="start"></ion-icon>
+      <ion-label>Card Button Item 1 activated</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="walk" slot="start"></ion-icon>
+      <ion-label>Card Button Item 2</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <br>
+  <br>
+
+  <h1>Card com cores</h1>
+  <ion-card color="danger"> 
+    <ion-card-header>
+      <ion-card-title>Card cor Danger</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do Card
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="warning"> 
+    <ion-card-header>
+      <ion-card-title>Card cor Warning</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do Card
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="success"> 
+    <ion-card-header>
+      <ion-card-title>Card cor Success</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do Card
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light" disabled="true"> 
+    <ion-card-header>
+      <ion-card-title>Card desabilitado</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do Card
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

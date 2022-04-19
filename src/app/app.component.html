@@ -1,0 +1,84 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+
+        <ion-list-header>IONIC Framework 6</ion-list-header>
+        <ion-note>ANDROID / IOS / PWA</ion-note>
+
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- Colocando todas as opções dos Componentes dentro de um Accordion -->
+        <ion-accordion-group>
+          <ion-accordion value="componentes">
+            <ion-item slot="header">
+              <ion-icon slot="start" color="dark" name="logo-ionic"></ion-icon>
+              <ion-label>Componentes do IONIC</ion-label>
+            </ion-item>
+
+            <ion-list slot="content">
+              <ion-menu-toggle auto-hide="false" *ngFor="let itemMenu of menuComponentesCollection; let i = index">
+                <ion-item routerDirection="root" [routerLink]="[itemMenu.url]" lines="none" detail="false"
+                  routerLinkActive="selected">
+                  <ion-icon slot="start" [ios]="itemMenu.icon + '-outline'" [md]="itemMenu.icon + '-sharp'">
+                  </ion-icon>
+                  <ion-label>{{ itemMenu.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- Colocando todas as opções do nativos dentro de um Accordion -->
+        <ion-accordion-group>
+          <ion-accordion value="native">
+            <ion-item slot="header">
+              <ion-icon slot="start" color="dark" name="phone-portrait"></ion-icon>
+              <ion-label>Recursos Nativos do Mobile</ion-label>
+            </ion-item>
+
+            <ion-list slot="content">
+              <ion-menu-toggle auto-hide="false" *ngFor="let itemMenu of menuCollectionNativos; let i = index">
+                <ion-item routerDirection="root" [routerLink]="[itemMenu.url]" lines="none" detail="false"
+                  routerLinkActive="selected">
+                  <ion-icon slot="start" [ios]="itemMenu.icon + '-outline'" [md]="itemMenu.icon + '-sharp'">
+                  </ion-icon>
+                  <ion-label>{{ itemMenu.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+         <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- Colocando todas as opções do nativos dentro de um Accordion -->
+        <ion-accordion-group>
+          <ion-accordion value="native">
+            <ion-item slot="header">
+              <ion-icon slot="start" color="dark" name="desktop-outline"></ion-icon>
+              <ion-label>Layouts</ion-label>
+            </ion-item>
+
+            <ion-list slot="content">
+              <ion-menu-toggle auto-hide="false" *ngFor="let itemMenu of menuCollectionLayouts; let i = index">
+                <ion-item routerDirection="root" [routerLink]="[itemMenu.url]" lines="none" detail="false"
+                  routerLinkActive="selected">
+                  <ion-icon slot="start" [ios]="itemMenu.icon + '-outline'" [md]="itemMenu.icon + '-sharp'">
+                  </ion-icon>
+                  <ion-label>{{ itemMenu.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

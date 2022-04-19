@@ -1,0 +1,20 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='danger'>
+    <ion-button slot="start" color="danger">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Camera do Celular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Botão que irá tirar a foto do celular -->
+  <ion-button expand="block" (click)="tirarfoto()">Tirar Foto</ion-button>
+
+  <!-- Enquanto a variável foto não for carregada o ion-card não será exibido com a foto que foi tirada da camera/galeria -->
+  <ion-card [hidden]="!foto">
+    <img src="{{foto}}">
+  </ion-card>
+
+</ion-content>

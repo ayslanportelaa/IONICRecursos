@@ -1,0 +1,46 @@
+.titulo{
+
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+@media screen and (max-width: 600px) {
+    .ionic {
+      width: 250px;
+      height: 83px;
+      position: relative;
+      top:40px;
+      left:50px;
+    }
+
+    .angular{
+        position: relative;
+        width: 150px;
+        height: 120px;
+        top:15px;
+        left:180px;
+
+
+    }
+
+    .gstore{
+        position: relative;
+        width: 130px;
+        height: 100px;
+        top:2px;
+        left:30px;
+
+
+    }
+
+    .applestore{
+        position: relative;
+        width: 130px;
+        height: 70px;
+        top:2px;
+        left:30px;
+
+
+    }
+  }

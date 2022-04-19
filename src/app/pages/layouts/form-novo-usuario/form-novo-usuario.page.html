@@ -1,0 +1,43 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>Novo Usuário</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="start-modal">
+    <form [formGroup]="form1">
+
+      <img src="../../assets/novo-usuario.gif" class="start-avatar-novo-usuario">
+      <ion-list>
+
+        <ion-item>
+          <ion-label position="stacked"><strong>E-mail do usuário</strong></ion-label>
+          <ion-input formControlName="emailUsuario"></ion-input>
+        </ion-item>
+
+
+
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
+
+
+
+
+
+      </ion-list>
+
+      <div class="start-buttons-novo-usuario">
+        <ion-button color='danger' size="small" (click)="fecharModal()">Cancelar</ion-button>
+        <ion-button size="small" (click)="addUsuario()">ADD Usuário</ion-button>
+      </div>
+
+
+    </form>
+  </div>
+
+  <p>OI</p>
+
+</ion-content>

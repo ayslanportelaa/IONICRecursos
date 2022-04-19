@@ -1,0 +1,75 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Dados Usuário <br> Em desenvolvimento</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="start_ion-content">
+
+
+  <div class='start_card_usuario'>
+
+    <ion-card class="start_card "
+      style="padding: 25px !important; margin-top: 70px !important; width: 370px !important;">
+
+      <div class='div-center'>
+        <ion-label class='titulo'>
+
+          Meus Dados
+        </ion-label>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <div class='div-center'>
+        <img src="../../assets/foto-perfil.png" width="100%" class="user-img-circle" />
+
+      </div>
+
+
+      <ion-list padding class="start-list">
+        <ion-button size='small' color='primary' class="start-btn-trocar-foto" (click)="uupload_img_perfil()">Trocar foto
+          de perfil</ion-button>
+        <input #inputFile type="file" hidden multiple id="upload_img_perfil" (change)="geraBase64($event)" accept=".jpg" />
+        <ion-item>
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Ayslan Portela</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-label>ayslan@moshe.com.br</ion-label>
+        </ion-item>
+        <br>
+
+
+        <div class='item-card'>
+          <ion-label>
+            <strong>SUPERVISOR ? : </strong>
+            <strong>Sim</strong>
+          </ion-label>
+        </div>
+
+
+        <br>
+        <ion-button expand='block' color='primary'>Salvar alterações</ion-button>
+
+
+      </ion-list>
+
+    </ion-card>
+
+
+
+
+
+
+  </div>
+
+
+</ion-content>

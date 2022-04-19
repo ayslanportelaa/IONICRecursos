@@ -1,0 +1,19 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Botão que irá disparar o alert na tela criada em alert.page.ts -->
+  <ion-button expand="block" (click)="alertComum()">Alert Comum</ion-button>
+  <ion-button expand="block" (click)="alertMultiplosBotoes()">Alert Múltiplos Botões</ion-button>
+  <ion-button expand="block" (click)="confirm()">Alert Confirm</ion-button>
+  <ion-button expand="block" (click)="prompt()">Alert prompt</ion-button>
+
+  <h1>{{mensagem}}</h1>
+</ion-content>

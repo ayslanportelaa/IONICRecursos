@@ -1,0 +1,19 @@
+.user-img-circle {
+    border-radius: 100%;
+    overflow: hidden;
+    height: 100px;
+    width:100px;
+    background: #fff;
+    z-index: 1000;
+    border: 1px solid rgb(8 153 251);
+    padding: 2px;
+    position: relative;
+    bottom: 36px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.678) !important;
+}
+
+.start-btn-trocar-foto{
+
+    position: relative !important;
+    left: 96px !important;
+}

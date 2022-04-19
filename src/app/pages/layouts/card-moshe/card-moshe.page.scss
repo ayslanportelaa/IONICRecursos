@@ -1,0 +1,109 @@
+
+.div-center {
+    display: flex;
+    justify-content: center;
+  }
+
+.start_ion-content{
+    --background: linear-gradient(to right, #0093F7 , 80%, #0f9eff);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    color:whitesmoke !important;
+    text-align: left !important; 
+    font-size: medium !important;
+    padding: 50px !important;
+}
+
+.start_input{
+    color: black;
+    caret-color: black;
+    --background: rgb(221, 243, 255) !important;
+    border-radius: 10px !important;
+    border: 1px solid #6cb1ff !important;
+
+    padding-left:  05px !important;
+    padding-right: 05px !important;
+    margin-bottom: 05px !important;
+    
+    font-size: 16px     !important;
+  
+    // Largula do contorno...
+    max-height: 5vh !important;
+}
+
+.table-round-corner {
+    // margin-top: 15px;
+    width: 100%;
+    text-align: left;
+    overflow:hidden;
+    border-collapse:separate;
+    border: solid #6cb1ff 1px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+
+.start_card{
+    background-color: white !important;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.678) !important;
+    // Interno do Card
+    padding: 5px !important;
+    // Externo em relação ao Content
+    margin: 20px !important;
+    margin-right:35px !important; 
+    bottom:70px !important;   
+}
+
+
+.start_card_usuario {
+    width: 60% !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    padding-top: 1rem !important;
+    position: relative !important;
+    left: 350px !important;
+    bottom: 10px !important;
+  }
+
+  .start-list{
+      position: relative;
+      bottom: 31px;
+  }
+
+  .item-card{
+
+    position: relative !important;
+    left:13px !important;
+  }
+
+  .titulo {
+    color: var(--ion-color-primary-shade) !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  
+
+  @media only screen and (max-width: 800px) {
+    .start_card_usuario {
+    width: 60% !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    padding-top: 1rem !important;
+    position: relative !important;
+    left: 0px !important;
+      }
+    
+  }
+

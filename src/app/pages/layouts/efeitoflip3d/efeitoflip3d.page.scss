@@ -1,0 +1,75 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    perspective: 300px;
+    width: 10%;
+}
+
+.box__content {
+    background: pink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 600ms ease-in-out;
+}
+
+.box__front,
+.box__back {
+    background: purple;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.box__back {
+    background: lightgreen;
+    transform: rotateY(180deg);
+}
+
+.box:hover .box__content{
+
+    transform: rotateY(180deg);
+}
+
+
+
+
+.box2 {
+    perspective: 300px;
+    width: 10%;
+}
+
+.box__content2 {
+    //background: pink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 600ms ease-in-out;
+}
+
+.box__front2,
+.box__back2 {
+    //background: purple;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.box__back2 {
+    //background: lightgreen;
+    transform: rotateY(180deg);
+}
+
+.box2:hover .box__content2{
+
+    transform: rotateY(180deg);
+}
+

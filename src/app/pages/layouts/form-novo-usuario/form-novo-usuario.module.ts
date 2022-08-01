@@ -17,6 +17,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     IonicModule,
     FormNovoUsuarioPageRoutingModule
   ],
-  declarations: [FormNovoUsuarioPage]
+  declarations: [FormNovoUsuarioPage],
+  exports:[FormNovoUsuarioPage]
 })
 export class FormNovoUsuarioPageModule {}

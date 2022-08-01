@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormControl, FormBuilder, FormGroup } from '@angular/forms';
 import { AlertController, ModalController } from '@ionic/angular';
 
 
@@ -15,7 +15,7 @@ export class FormNovoUsuarioPage implements OnInit {
   public emailUsuario: string;
   public supervisor: boolean;
   public msgEmailVazio: string = '';
-  public listaMenu = ["Home", "Sair", "Meus Dados","Abacaxi","Jornal","Virgem"];
+  public listaMenu = ["Home", "Sair", "Meus Dados", "Abacaxi", "Jornal", "Virgem"];
 
   constructor(
     public formBuilder: FormBuilder,
@@ -27,17 +27,24 @@ export class FormNovoUsuarioPage implements OnInit {
   ngOnInit() {
 
     this.form1 = this.formBuilder.group({
-      emailUsuario: ['', [Validators.required]],
+      emailUsuario: new FormControl('', [Validators.required, Validators.minLength(6)]),
       supervisor: ['false'],
 
     }
 
     );
 
-    
+
+      
+
+
+
     this.dadosDoArray();
     console.log(this.listaMenu);
   }
+
+
+ 
 
   fecharModal() {
 
@@ -50,12 +57,12 @@ export class FormNovoUsuarioPage implements OnInit {
     this.emailUsuario = this.form1.controls.emailUsuario.value;
     this.supervisor = this.form1.controls.supervisor.value;
 
-    if (this.emailUsuario == '') {
-      alert('E-mail obrigatório');
-      this.msgEmailVazio = 'Preencha o e-mail';
-      return
-    }
-
+    // if (this.emailUsuario == '') {
+    //   alert('E-mail obrigatório');
+    //   this.msgEmailVazio = 'Preencha o e-mail';
+    //   return
+    // }
+    alert('E-mail obrigatório');
 
 
   }
@@ -68,27 +75,27 @@ export class FormNovoUsuarioPage implements OnInit {
   // }
 
 
-mudarPosicaoOpcaoMenu(array, from, to) {
-    
+  mudarPosicaoOpcaoMenu(array, from, to) {
+
     array.splice(to, 0, array.splice(from, 1)[0]);
     return array;
-    
+
   }
 
-  dadosDoArray(){
-    
+  dadosDoArray() {
+
     var posicaoDesejada = this.listaMenu.length;
-    
+
 
     var posicaoSair = this.listaMenu.findIndex((opcao, index, array) => opcao === 'Sair');
 
 
 
-    console.log("Posição do Sair é :",posicaoSair);
-    console.log("Ultima posição do Array é",posicaoDesejada);
+    console.log("Posição do Sair é :", posicaoSair);
+    console.log("Ultima posição do Array é", posicaoDesejada);
 
 
-    this.mudarPosicaoOpcaoMenu(this.listaMenu,posicaoSair,posicaoDesejada);
+    this.mudarPosicaoOpcaoMenu(this.listaMenu, posicaoSair, posicaoDesejada);
   }
 
 

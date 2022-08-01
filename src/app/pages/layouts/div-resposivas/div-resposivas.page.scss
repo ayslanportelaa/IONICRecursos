@@ -1,0 +1,29 @@
+.primeira{
+
+    //background-color: green;
+    //width: 25%;
+            display: inline-block;
+}
+
+.segunda{
+
+    background-color: rgb(39, 83, 179);
+    //width: 25%;
+            display: inline-block;
+}
+
+.terceira{
+
+    background-color: rgb(128, 0, 0);
+    //width: 25%;
+            //display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  
+    .primeira,
+    .segunda,
+    .terceira {
+        width: 100%;
+    }
+}

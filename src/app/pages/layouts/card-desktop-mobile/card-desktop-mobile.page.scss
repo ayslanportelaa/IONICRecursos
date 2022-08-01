@@ -1,0 +1,20 @@
+.teste{
+
+    column-count: 1;
+    border: 1px solid black;
+}
+
+.img-wrapper{
+        background-size: cover;
+        min-height: 200px;
+
+}
+
+
+@media (min-width: 0px){
+
+    .teste{
+        column-count: 1 !important;
+    }
+
+}

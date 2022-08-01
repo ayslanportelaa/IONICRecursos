@@ -1,10 +1,26 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild,ElementRef } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
+import { Router } from "@angular/router";
+
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
+
+
+  ngOnInit() {
+   
+  
+  }
+  
+ 
+  
+
+
   public menuComponentesCollection = [
     { title: 'Home',          url: 'home',            icon: 'home'           },
     { title: 'Action-Sheet',  url: 'actionsheet',     icon: 'arrow-up'       },
@@ -26,16 +42,29 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
-    { title: 'Card Moshe',       url: 'card-moshe',              icon: 'albums' },
-    { title: 'Grid Moshe',       url: 'grid-moshe-usuarios',     icon: 'albums' },
-    { title: 'Grid Moshe 2',     url: 'grid-moshe2',             icon: 'albums' },
-    { title: 'Data-Table',       url: 'data-table',              icon: 'calendar' },
-    { title: 'Data-Table2',      url: 'data-table2',             icon: 'calendar' },
-    { title: 'Modal FormBuilder',url: 'modal',                   icon: 'alert' },
-    { title: 'Form Novo Usuário',url: 'form-novo-usuario',       icon: 'alert' },
-    { title: 'Dados Usuário',    url: 'card-dados-usuario',      icon: 'person' },
+    { title: 'Flip 3D',            url: 'efeitoflip3d',            icon: 'albums' },
+    { title: 'Página Pai',         url: 'pagina-pai',              icon: 'albums' },
+    { title: 'DIV Responsivas',    url: 'div-resposivas',          icon: 'albums' },
+    { title: 'Card Moshe',         url: 'card-moshe',              icon: 'albums' },
+    { title: 'Card Desktop-Mobile',url: 'card-desktop-mobile',     icon: 'albums' },
+    { title: 'Grid Moshe',         url: 'grid-moshe-usuarios',     icon: 'albums' },
+    { title: 'Grid Moshe 2',       url: 'grid-moshe2',             icon: 'albums' },
+    { title: 'Data-Table',         url: 'data-table',              icon: 'calendar' },
+    { title: 'Data-Table2',        url: 'data-table2',             icon: 'calendar' },
+    { title: 'Modal FormBuilder',  url: 'modal',                   icon: 'alert' },
+    { title: 'Form Novo Usuário',  url: 'form-novo-usuario',       icon: 'alert' },
+    { title: 'Form Validação'   ,  url: 'form-validators'  ,       icon: 'alert' },
+    { title: 'Form Estilizado'   ,  url: 'formulario-estilizado-css' ,   icon: 'alert' },
+    { title: 'Dados Usuário',      url: 'card-dados-usuario',      icon: 'person' },
     
   ];
  
-  constructor() {}
+  constructor(
+    private scroller: ViewportScroller,
+    private router: Router
+    ) {}
 }
+
+
+
+

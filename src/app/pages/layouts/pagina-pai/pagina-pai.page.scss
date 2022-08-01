@@ -1,0 +1,92 @@
+.container{
+
+    width: 100%;
+    height: auto;
+    background:#007bbf;
+
+    // // add flexbox style
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box{
+
+    height: 50%;
+    width: 33%;
+    background: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    animation: esquerda-direita 5s;
+    position: relative;
+    left: 30px;
+}
+
+@keyframes esquerda-direita {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 30px;
+    }
+  }
+
+.box-lp-vertical{
+    width: 10%;
+    height: 800px;
+    //background: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+
+}
+
+.box-lp-direito{
+
+    height: 50%;
+    width: 33%;
+    background: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+.lp-linha-vertical {
+    border-left: 1px solid rgb(10, 10, 10);
+    height: 250px;
+    position: relative;
+    left: 50%;
+    top: 25px;
+    //bottom: 520px;
+  }
+  
+
+@media screen and (max-width:1200px){
+
+    .box{
+        width: 40%;
+        left: 0;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    .box{
+        width: 90%;
+    }
+
+    .box-lp-vertical{
+        display: none;
+    
+    }
+
+    .box-lp-direito{
+
+       width: 90%;
+    }
+    
+}

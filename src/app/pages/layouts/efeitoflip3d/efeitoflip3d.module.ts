@@ -4,24 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { Efeitoflip3dPageRoutingModule } from './efeitoflip3d-routing.module';
 
-import { HomePage } from './home.page';
-
-import{UserPageModule} from '../user/user.module';
-
-
+import { Efeitoflip3dPage } from './efeitoflip3d.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
-
-   
-  
+    Efeitoflip3dPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [Efeitoflip3dPage]
 })
-export class HomePageModule {}
+export class Efeitoflip3dPageModule {}

@@ -4,7 +4,9 @@
   </ion-toolbar> -->
 </ion-header>
 
-<ion-content>
+<!-- <ion-content style="--background:red;--offset-bottom: -161px;" > -->
+ <ion-content id="ion-content">
+  
   <div class="start-modal">
     <form [formGroup]="form1">
 
@@ -17,27 +19,62 @@
         </ion-item>
 
 
+        <p>TESTE</p>
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
 
         <ion-item>
           <ion-label>Supervisor ?</ion-label>
           <ion-checkbox formControlName="supervisor"></ion-checkbox>
         </ion-item>
 
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
 
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
 
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Supervisor ?</ion-label>
+          <ion-checkbox formControlName="supervisor"></ion-checkbox>
+        </ion-item>
+
+        
+
+       
 
 
       </ion-list>
 
       <div class="start-buttons-novo-usuario">
         <ion-button color='danger' size="small" (click)="fecharModal()">Cancelar</ion-button>
-        <ion-button size="small" (click)="addUsuario()">ADD Usuário</ion-button>
+        <ion-button size="small" (click)="addUsuario()" type="submit" [disabled]="form1.invalid">ADD Usuário</ion-button>
       </div>
 
 
     </form>
   </div>
 
-  <p>OI</p>
-
+ 
 </ion-content>

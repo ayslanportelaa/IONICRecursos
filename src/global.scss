@@ -32,7 +32,9 @@
   }
 
 .start_ion-content{
-    --background: linear-gradient(to right, #0093F7 , 80%, #0f9eff);
+    // --background: linear-gradient(to right, #6ff700 , 60%, #e7e7e7);
+
+    --background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

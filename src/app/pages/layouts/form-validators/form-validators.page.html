@@ -1,0 +1,23 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Formulário com Validação</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="RegisterForm">
+
+    <div class="inputfield">
+      <ion-input type="text" placeholder="Digite seu e-mail" formControlName="nome"></ion-input>
+    </div>
+
+    <ion-button click()="enviar">Enviar</ion-button>
+
+  </form>
+
+</ion-content>

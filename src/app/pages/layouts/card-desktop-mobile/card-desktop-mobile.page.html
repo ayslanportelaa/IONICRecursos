@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>card-desktop-mobile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ 
+ <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" sizeLg="4" sizeXs="12" *ngIf="data">
+        <div>
+        <ion-card *ngFor="let item of [].constructor(20)" >
+          <ion-item>
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+      </div>
+     </ion-col>
+
+     <ion-col sizeMd="4" sizeLg="4" sizeXs="12" *ngIf="!data">
+      <div>
+      <ion-card *ngFor="let item of [].constructor(20)" >
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-skeleton-text animated style="width:10%"></ion-skeleton-text><br>
+          <ion-skeleton-text animated style="width:30%"></ion-skeleton-text>
+          <ion-skeleton-text animated style="width:30%"></ion-skeleton-text>
+        </ion-item>
+
+        <ion-card-content>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+         <ion-skeleton-text animated style="width:100%"></ion-skeleton-text>
+        </ion-card-content>
+      </ion-card>
+    </div>
+   </ion-col>
+
+     
+
+ </ion-row>
+  </ion-grid>
+
+
+
+
+
+
+</ion-content>

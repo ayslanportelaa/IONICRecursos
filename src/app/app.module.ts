@@ -9,9 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
 import { BatteryStatus } from '@awesome-cordova-plugins/battery-status/ngx';
 //import {ModalPageModule} from './pages/layouts/modal/modal.module'
+import { UserComponent } from './pages/componentes/user/user.component';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,UserComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule/*,ModalPageModule*/],
   providers: [

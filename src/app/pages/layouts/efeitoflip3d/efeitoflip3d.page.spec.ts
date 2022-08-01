@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { HomePage } from './home.page';
+import { Efeitoflip3dPage } from './efeitoflip3d.page';
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+describe('Efeitoflip3dPage', () => {
+  let component: Efeitoflip3dPage;
+  let fixture: ComponentFixture<Efeitoflip3dPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomePage ],
+      declarations: [ Efeitoflip3dPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(Efeitoflip3dPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -1,0 +1,40 @@
+// .teste{
+
+//     position: relative;
+//     width: 300px !important;
+// }
+
+// ::ng-deep app-form-novo-usuario{
+
+//     position: relative;
+//     width: 3px !important;
+//     height: 500px;
+//     left:600px;
+// }
+
+// .teste2{
+//     ng-deep app-form-novo-usuario ion-content{
+// width: 150px !important;
+   
+// }
+
+// }
+
+
+
+
+ :host ::ng-deep app-form-novo-usuario ion-content{
+
+   width: 300px;
+   --offset-bottom: -180px !important;
+
+ }
+
+.teste2{
+:host ng-deep app-form-novo-usuario ion-content{
+
+    width: 300px;
+    
+ 
+ }
+}

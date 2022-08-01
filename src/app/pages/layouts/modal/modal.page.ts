@@ -13,7 +13,8 @@ import {FormNovoUsuarioPage} from '../form-novo-usuario/form-novo-usuario.page'
 export class ModalPage implements OnInit {
   public form1: FormGroup;
   public modalCtrl: ModalController;
-
+ public teste:any;
+ public html:any;
 
   constructor(
     public formBuilder: FormBuilder,
@@ -22,11 +23,13 @@ export class ModalPage implements OnInit {
   ) { }
 
   ngOnInit() {
-
-   
+  
+    this.html = '<app-form-novo-usuario></app-form-novo-usuario>';
   }
 
   openModal(){
+
+  
 
   const modal =  this.modalController.create({
       component:FormNovoUsuarioPage,

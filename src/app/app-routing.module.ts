@@ -87,6 +87,31 @@ const routes: Routes = [
     path: 'card-dados-usuario',
     loadChildren: () => import('./pages/layouts/card-dados-usuario/card-dados-usuario.module').then( m => m.CardDadosUsuarioPageModule)
   },
+  {
+    path: 'card-desktop-mobile',
+    loadChildren: () => import('./pages/layouts/card-desktop-mobile/card-desktop-mobile.module').then( m => m.CardDesktopMobilePageModule)
+  },
+  {
+    path: 'form-validators',
+    loadChildren: () => import('./pages/layouts/form-validators/form-validators.module').then( m => m.FormValidatorsPageModule)
+  },
+  {
+    path: 'formulario-estilizado-css',
+    loadChildren: () => import('./pages/layouts/formulario-estilizado-css/formulario-estilizado-css.module').then( m => m.FormularioEstilizadoCssPageModule)
+  },
+  {
+    path: 'div-resposivas',
+    loadChildren: () => import('./pages/layouts/div-resposivas/div-resposivas.module').then( m => m.DivResposivasPageModule)
+  },
+  
+  {
+    path: 'pagina-pai',
+    loadChildren: () => import('./pages/layouts/pagina-pai/pagina-pai.module').then( m => m.PaginaPaiPageModule)
+  },
+  {
+    path: 'efeitoflip3d',
+    loadChildren: () => import('./pages/layouts/efeitoflip3d/efeitoflip3d.module').then( m => m.Efeitoflip3dPageModule)
+  },
  
 
 ];

@@ -1,0 +1,53 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Efeito Flip 3D</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Exemplo funcional de FLIP 3D -->
+  <!-- <div class="box">
+    <div class="box__content">
+      <div class="box__front">
+        <h1>Front 1</h1>
+      </div>
+      <div class="box__back">
+        <h1>Back 1</h1>
+        <p>Desenvolvido por Ayslan Portela</p>
+      </div>
+    </div>
+  </div> -->
+
+  <br>
+  <br>
+
+
+
+
+
+
+  <ion-grid class="box2" *ngFor="let item of [].constructor(3)">
+    <ion-row>
+      <ion-col sizeMd="4" sizeLg="4" sizeXs="12">
+        <div class="box__content2">
+          <div class="box__front2">
+            <h1>Front 1</h1>
+          </div>
+          <div class="box__back2">
+            <h1>Back 1</h1>
+            <p>Desenvolvido por Ayslan Portela</p>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

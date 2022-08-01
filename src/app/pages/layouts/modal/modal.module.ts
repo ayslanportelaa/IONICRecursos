@@ -9,6 +9,8 @@ import { ModalPageRoutingModule } from './modal-routing.module';
 
 import { ModalPage } from './modal.page';
 
+import { FormNovoUsuarioPage } from '../form-novo-usuario/form-novo-usuario.page';
+
 
 @NgModule({
   imports: [
@@ -16,9 +18,12 @@ import { ModalPage } from './modal.page';
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    ModalPageRoutingModule
+    ModalPageRoutingModule,
+    
     
   ],
-  declarations: [ModalPage]
+  declarations: [ModalPage,FormNovoUsuarioPage],
+  exports:[FormNovoUsuarioPage]
+  
 })
 export class ModalPageModule {}

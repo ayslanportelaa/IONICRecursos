@@ -16,7 +16,7 @@
             </ion-item>
 
             <ion-list slot="content">
-              <ion-menu-toggle auto-hide="false" *ngFor="let itemMenu of menuComponentesCollection; let i = index">
+              <ion-menu-toggle style="color:#cfb27c" auto-hide="false" *ngFor="let itemMenu of menuComponentesCollection; let i = index">
                 <ion-item routerDirection="root" [routerLink]="[itemMenu.url]" lines="none" detail="false"
                   routerLinkActive="selected">
                   <ion-icon slot="start" [ios]="itemMenu.icon + '-outline'" [md]="itemMenu.icon + '-sharp'">

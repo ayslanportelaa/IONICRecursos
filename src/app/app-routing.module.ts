@@ -112,6 +112,14 @@ const routes: Routes = [
     path: 'efeitoflip3d',
     loadChildren: () => import('./pages/layouts/efeitoflip3d/efeitoflip3d.module').then( m => m.Efeitoflip3dPageModule)
   },
+  {
+    path: 'animacao3d',
+    loadChildren: () => import('./pages/layouts/animacao3d/animacao3d.module').then( m => m.Animacao3dPageModule)
+  },
+  {
+    path: 'dragdrop',
+    loadChildren: () => import('./pages/layouts/dragdrop/dragdrop.module').then( m => m.DragdropPageModule)
+  },
  
 
 ];

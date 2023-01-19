@@ -42,6 +42,8 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
+    { title: 'Drago-Drop',         url: 'dragdrop',                icon: 'albums' },
+    { title: 'Animações CSS',      url: 'animacao3d',              icon: 'albums' },
     { title: 'Flip 3D',            url: 'efeitoflip3d',            icon: 'albums' },
     { title: 'Página Pai',         url: 'pagina-pai',              icon: 'albums' },
     { title: 'DIV Responsivas',    url: 'div-resposivas',          icon: 'albums' },

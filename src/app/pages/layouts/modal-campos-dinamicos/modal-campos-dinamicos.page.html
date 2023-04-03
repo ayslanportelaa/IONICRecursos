@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-button expand="full" id="open-modal">Abrir Modal</ion-button>
+
+  <!-- MODAL INCLUSÃO DO TELEFONE -->
+  <ion-modal class='modal-inclusao-telefone' trigger="open-modal">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>MODAL CAMPOS DINAMICOS</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="closeModal()">Fechar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+
+        <form [formGroup]="formulario">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating">Nome</ion-label>
+              <ion-input type="text" formControlName="nome"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <ion-toggle class="toggle-ccredito" slot="end" checked="false" color="success"
+          (ionChange)="ligaDesligaCamposTitularCcredito($event)">
+        </ion-toggle>
+
+        <ion-label *ngIf="this.toggleLigaDesliga == 1">LIGADO</ion-label>
+
+        <ion-item *ngIf="this.toggleLigaDesliga == 1">
+          <ion-label position="floating">Idade</ion-label>
+          <ion-input type="text" formControlName="idade"></ion-input>
+        </ion-item>
+          
+        </form>
+
+      </ion-content>
+
+
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

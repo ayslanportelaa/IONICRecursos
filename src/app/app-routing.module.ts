@@ -120,6 +120,18 @@ const routes: Routes = [
     path: 'dragdrop',
     loadChildren: () => import('./pages/layouts/dragdrop/dragdrop.module').then( m => m.DragdropPageModule)
   },
+  {
+    path: 'grids-responsivas',
+    loadChildren: () => import('./pages/layouts/grids-responsivas/grids-responsivas.module').then( m => m.GridsResponsivasPageModule)
+  },
+  {
+    path: 'modal-campos-dinamicos',
+    loadChildren: () => import('./pages/layouts/modal-campos-dinamicos/modal-campos-dinamicos.module').then( m => m.ModalCamposDinamicosPageModule)
+  },
+  {
+    path: 'charts',
+    loadChildren: () => import('./pages/layouts/charts/charts.module').then( m => m.ChartsPageModule)
+  },
  
 
 ];

@@ -42,6 +42,9 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
+    { title: 'Charts',             url: 'charts',                  icon: 'albums' },
+    { title: 'Modal Dinamico',     url: 'modal-campos-dinamicos',  icon: 'albums' },
+    { title: 'Grid Responsivel',   url: 'grids-responsivas',       icon: 'albums' },
     { title: 'Drago-Drop',         url: 'dragdrop',                icon: 'albums' },
     { title: 'Animações CSS',      url: 'animacao3d',              icon: 'albums' },
     { title: 'Flip 3D',            url: 'efeitoflip3d',            icon: 'albums' },

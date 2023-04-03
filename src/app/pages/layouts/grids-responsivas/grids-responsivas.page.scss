@@ -1,0 +1,33 @@
+.start-cadastro-detalhes-card{
+    width: 100%;
+    //border: 1px solid #ff0000;
+    overflow-x: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: #0f9eff26 !important;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 68%) !important;
+    padding: 4px !important;
+    margin: 4px !important;
+    margin-right: 5px !important;
+    position: relative;
+    width: 101%;
+    right: 6px;
+  }
+  
+  .responsive-table{
+    display: inline-block;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .responsive-table > table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .responsive-table > table td, th {
+    border-bottom: 1px solid #cccccc;
+    padding: 8px;
+    font-family: Arial;
+    font-size: 16px;
+  }

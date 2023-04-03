@@ -1,0 +1,14 @@
+.grafico-pizza {
+    width: 30%;
+    position: relative;
+    left: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .grafico-pizza {
+        width: 54%;
+        height: 292px;
+        position: relative;
+        left: 83px;
+    }
+}

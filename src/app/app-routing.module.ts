@@ -132,6 +132,10 @@ const routes: Routes = [
     path: 'charts',
     loadChildren: () => import('./pages/layouts/charts/charts.module').then( m => m.ChartsPageModule)
   },
+  {
+    path: 'animacao-scroll',
+    loadChildren: () => import('./pages/layouts/animacao-scroll/animacao-scroll.module').then( m => m.AnimacaoScrollPageModule)
+  },
  
 
 ];

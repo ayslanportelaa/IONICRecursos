@@ -42,6 +42,7 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
+    { title: 'MS Autenticar',      url: 'msautenticar'   ,         icon: 'albums' },
     { title: 'Animação Scroll',    url: 'animacao-scroll',         icon: 'albums' },
     { title: 'Charts',             url: 'charts',                  icon: 'albums' },
     { title: 'Modal Dinamico',     url: 'modal-campos-dinamicos',  icon: 'albums' },

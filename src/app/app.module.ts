@@ -10,7 +10,7 @@ import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
 import { BatteryStatus } from '@awesome-cordova-plugins/battery-status/ngx';
 //import {ModalPageModule} from './pages/layouts/modal/modal.module'
 import { UserComponent } from './pages/componentes/user/user.component';
-
+import * as msal from '@azure/msal-browser';
 
 @NgModule({
   declarations: [AppComponent,UserComponent],

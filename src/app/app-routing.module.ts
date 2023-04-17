@@ -136,6 +136,10 @@ const routes: Routes = [
     path: 'animacao-scroll',
     loadChildren: () => import('./pages/layouts/animacao-scroll/animacao-scroll.module').then( m => m.AnimacaoScrollPageModule)
   },
+  {
+    path: 'msautenticar',
+    loadChildren: () => import('./pages/layouts/msautenticar/msautenticar.module').then( m => m.MsautenticarPageModule)
+  },
  
 
 ];

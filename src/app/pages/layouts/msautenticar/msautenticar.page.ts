@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import * as msal from '@azure/msal-browser';
 import { PublicClientApplication } from '@azure/msal-browser';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
+
+declare const chrome: any;
 @Component({
   selector: 'app-msautenticar',
   templateUrl: './msautenticar.page.html',
@@ -12,9 +15,10 @@ export class MsautenticarPage implements OnInit {
 
   private readonly msalInstance: PublicClientApplication;
   public urlSafe: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl('');
-  public conteudo:any;
+  public conteudo: any;
 
-  constructor(public sanitizer: DomSanitizer) {
+
+  constructor(public sanitizer: DomSanitizer, private screenOrientation: ScreenOrientation) {
     this.msalInstance = new PublicClientApplication({
       auth: {
         clientId: 'af4e0774-f628-47a9-934d-6dd3c9db19b4',
@@ -36,14 +40,14 @@ export class MsautenticarPage implements OnInit {
 
 
       var myFrame = document.getElementById("myFrame");
-      myFrame.addEventListener("load", function() {
+      myFrame.addEventListener("load", function () {
         // código para manipular o conteúdo do iframe aqui
       });
 
 
 
 
-    
+
 
 
       //this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl('http://localhost:3000/scrum');
@@ -52,4 +56,25 @@ export class MsautenticarPage implements OnInit {
     }
   }
 
+
+  abrirTelaCheia(url) {
+    var params = 'width=' + screen.width;
+    params += ', height=' + screen.height;
+    params += ', top=0, left=0'
+    params += ', fullscreen=yes';
+    params += ', directories=no';
+    params += ', location=no';
+    params += ', menubar=no';
+    params += ', resizable=no';
+    params += ', scrollbars=no';
+    params += ', status=no';
+    params += ', toolbar=no';
+
+
+    var newwin = window.open(url, 'FullWindowAll', params);
+    if (window.focus) { newwin.focus() }
+    return false;
+  }
 }
+
+

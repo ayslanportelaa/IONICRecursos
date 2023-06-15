@@ -1,0 +1,26 @@
+<ion-header>
+  <!-- Definido tema dark para a barra superior da página do Botão -->
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>KANBAN</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="example-box" cdkDrag>
+
+  </div>
+  <!-- <div class="kanban-board">
+    <div class="kanban-column" *ngFor="let column of columns">
+      <h2>{{ column }}</h2>
+      <div class="kanban-cards">
+        <div class="kanban-card draggable" *ngFor="let card of getCards(column)">
+          {{ card }}
+        </div>
+      </div>
+    </div>
+  </div> -->
+</ion-content>

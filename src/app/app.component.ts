@@ -42,6 +42,8 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
+    { title: 'Kanban' ,            url: 'kanban',                  icon: 'reader' },
+    { title: 'Google OAuth' ,      url: 'google-oauth',            icon: 'albums' },
     { title: 'MS Autenticar',      url: 'msautenticar'   ,         icon: 'albums' },
     { title: 'Animação Scroll',    url: 'animacao-scroll',         icon: 'albums' },
     { title: 'Charts',             url: 'charts',                  icon: 'albums' },

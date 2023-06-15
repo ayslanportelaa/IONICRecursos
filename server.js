@@ -5,9 +5,9 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/scrum', (req, res) => {
-  // const url = 'https://lookerstudio.google.com/reporting/create?c.reportId=6250676f-0957-4541-9c6c-6da1289476ce&ds.ds0.connector=google';
-  const url ='https://moshe.visualstudio.com/Moshe/_dashboards/dashboard/501c8226-4c3e-41cd-bccd-2100810d8f3d';
+app.get('/lookerMoshe', (req, res) => {
+  const url = 'https://lookerstudio.google.com/reporting/create?c.reportId=fe0d3824-346d-4361-ab76-a6840735963c&ds.ds0.connector=googleCloudStorage&ds.ds0.pathType=FILE&ds.ds0.path=moshereport/temp-csv/report_20230414_20230413_scs_40825v_modelo_crm_v01_65532_9138C4C1F_3381E1929842189A.csv&c.mode=edit&r.reportName=NEW_AYSLAN';
+  //const url ='https://moshe.visualstudio.com/Moshe/_dashboards/dashboard/501c8226-4c3e-41cd-bccd-2100810d8f3d';
   
   request.get(url, (error, response, body) => {
     if (error) {

@@ -140,6 +140,14 @@ const routes: Routes = [
     path: 'msautenticar',
     loadChildren: () => import('./pages/layouts/msautenticar/msautenticar.module').then( m => m.MsautenticarPageModule)
   },
+  {
+    path: 'google-oauth',
+    loadChildren: () => import('./pages/layouts/google-oauth/google-oauth.module').then( m => m.GoogleOauthPageModule)
+  },
+  {
+    path: 'kanban',
+    loadChildren: () => import('./pages/layouts/kanban/kanban.module').then( m => m.KanbanPageModule)
+  },
  
 
 ];

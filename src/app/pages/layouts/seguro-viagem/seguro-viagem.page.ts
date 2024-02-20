@@ -18,6 +18,7 @@ export class SeguroViagemPage implements OnInit {
 
   }
 
+  // DIEGO
 
   aplicarCorSolida() {
     const corSolidaElement = document.getElementById("corSolida") as HTMLInputElement;

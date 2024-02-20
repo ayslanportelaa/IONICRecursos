@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Seguro Viagem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [style]="corBackground">
+
+
+
+  <div style="width: 38%;">
+    <ion-list>
+      <ion-item>
+        <ion-input label="Floating label" labelPlacement="floating" id="corSolida" placeholder="Cor Sólida"></ion-input>
+        <ion-button expand='small' color='primary' (click)="aplicarCorSolida()"
+          style="position: relative;">Aplicar cor sólida</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Floating label" labelPlacement="floating" id="corDegrade" placeholder="Cor Degrade"></ion-input>
+        <ion-button expand='small' color='primary' (click)="aplicarDegrade()"
+          style="position: relative;">Aplicar cor degradê</ion-button>
+      </ion-item>
+
+    </ion-list>
+
+
+  </div>
+
+  <div style="    position: relative;width: 74%;left: 320px;">
+    <img src="../../../../assets/seguro-viagem9-removebg.png" class="ionic" style="position: relative;">
+
+  </div>
+
+
+
+
+</ion-content>

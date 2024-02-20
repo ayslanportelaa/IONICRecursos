@@ -148,6 +148,14 @@ const routes: Routes = [
     path: 'kanban',
     loadChildren: () => import('./pages/layouts/kanban/kanban.module').then( m => m.KanbanPageModule)
   },
+  {
+    path: 'calendario-viagem',
+    loadChildren: () => import('./pages/layouts/calendario-viagem/calendario-viagem.module').then( m => m.CalendarioViagemPageModule)
+  },
+  {
+    path: 'seguro-viagem',
+    loadChildren: () => import('./pages/layouts/seguro-viagem/seguro-viagem.module').then( m => m.SeguroViagemPageModule)
+  },
  
 
 ];

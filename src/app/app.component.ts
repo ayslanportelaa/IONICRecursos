@@ -42,6 +42,8 @@ export class AppComponent {
   ];
 
   public menuCollectionLayouts = [
+    { title: 'Seguro Viagem',      url: 'seguro-viagem',           icon: 'airplane' },
+    { title: 'Calendário Viagem',  url: 'calendario-viagem',       icon: 'calendar' },
     { title: 'Kanban' ,            url: 'kanban',                  icon: 'reader' },
     { title: 'Google OAuth' ,      url: 'google-oauth',            icon: 'albums' },
     { title: 'MS Autenticar',      url: 'msautenticar'   ,         icon: 'albums' },
